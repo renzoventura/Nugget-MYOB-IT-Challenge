@@ -1,0 +1,6 @@
+Time 33
+Burger 27
+Coffee 25
+Salad 24
+Food 19
+Fish 13

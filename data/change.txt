@@ -1,0 +1,13 @@
+Service 4
+Location 6
+Menu 2
+Lamb 8
+Beach 4
+Time -7
+Burger 3
+Coffee -3
+Salad 3
+Food -2
+Wait -4
+Service -2
+Fish -4

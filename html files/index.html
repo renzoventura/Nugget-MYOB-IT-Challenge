@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dashboard</title>
+
+  <!-- Bootstrap -->
+  <link href="src/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="src/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="src/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <br>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <a href="#" class="btn btn-success" id="menu-toggle">
+              <div id='menu-icon'></div>
+              <div id='menu-icon'></div>
+              <div id='menu-icon'></div>
+            </a>
+            <h1>Heading</h1>
+            <div class="row">
+            <div class="col-lg-4">
+              <h1><small>Doughnut1</small></h1>
+            <canvas id="canvasDoughnut1"></canvas>
+          </div>
+          <div class="col-lg-4">
+            <h1><small>Doughnut2</small></h1>
+            <canvas id="canvasDoughnut2"></canvas>
+        </div>
+        <div class="col-lg-4">
+          <h1><small>Doughnut3</small></h1>
+          <canvas id="canvasDoughnut3"></canvas>
+      </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <i class="fa fa-bell fa-fw"></i> Reviews
+                  </div>
+                  <!-- /.panel-heading -->
+                  <div class="panel-body">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i> Review
+                            <span class="pull-right text-muted small"><em>Info</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i> Review
+                            <span class="pull-right text-muted small"><em>Info</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i> Review
+                            <span class="pull-right text-muted small"><em>Info</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i> Review
+                            <span class="pull-right text-muted small"><em>Info</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i> Review
+                            <span class="pull-right text-muted small"><em>Info</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i> Review
+                            <span class="pull-right text-muted small"><em>Info</em>
+                            </span>
+                        </a>
+                      </div>
+                      <!-- /.list-group -->
+                      <a href="#" class="btn btn-default btn-block">View All Reviews</a>
+                  </div>
+                  <!-- /.panel-body -->
+              </div>
+              <!-- /.panel -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="src/js/bootstrap.min.js"></script>
+  <script src="src/js/Chart.min.js"></script>
+  <!-- Chart.js -->
+  <script>
+    /*Chart.defaults.global.legend = {
+      enabled: false
+    };*/
+
+    var ctx = document.getElementById("canvasDoughnut1");
+    var cty = document.getElementById("canvasDoughnut2");
+    var ctz = document.getElementById("canvasDoughnut3");
+
+    var data1 = {
+      labels: [
+        "Bitch",
+        "Hoe",
+        "Slut",
+        "Cunt",
+        "Asshole"
+      ],
+      datasets: [{
+        data: [120, 50, 140, 180, 100],
+        backgroundColor: [
+          "#455C73",
+          "#9B59B6",
+          "#BDC3C7",
+          "#26B99A",
+          "#3498DB"
+        ],
+        hoverBackgroundColor: [
+          "#34495E",
+          "#B370CF",
+          "#CFD4D8",
+          "#36CAAB",
+          "#49A9EA"
+        ]
+
+      }]
+    };
+    var data2 = {
+      labels: [
+        "Jordan",
+        "Mika",
+        "Giovanni",
+        "Renzo",
+      ],
+      datasets: [{
+        data: [90, 34, 76, 160],
+        backgroundColor: [
+          "#455C73",
+          "#9B59B6",
+          "#BDC3C7",
+          "#26B99A",
+          "#3498DB"
+        ],
+        hoverBackgroundColor: [
+          "#34495E",
+          "#B370CF",
+          "#CFD4D8",
+          "#36CAAB",
+          "#49A9EA"
+        ]
+
+      }]
+    };
+    var data3 = {
+      labels: [
+        "Dark Grey",
+        "Purple Color",
+        "Gray Color"
+      ],
+      datasets: [{
+        data: [39, 89, 143],
+        backgroundColor: [
+          "#455C73",
+          "#9B59B6",
+          "#BDC3C7",
+          "#26B99A",
+          "#3498DB"
+        ],
+        hoverBackgroundColor: [
+          "#34495E",
+          "#B370CF",
+          "#CFD4D8",
+          "#36CAAB",
+          "#49A9EA"
+        ]
+
+      }]
+    };
+    var canvasDoughnut1 = new Chart(ctx, {
+      type: 'doughnut',
+      data: data1
+    });
+    var canvasDoughnut2 = new Chart(cty, {
+      type: 'doughnut',
+      data: data2
+    });
+    var canvasDoughnut3 = new Chart(ctz, {
+      type: 'doughnut',
+      data: data3
+    });
+  </script>
+  <!-- Menu toggle script -->
+  <script>
+    $("#menu-toggle").click( function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("menuDisplayed");
+    });
+  </script>
+
+</body>
+</html>
